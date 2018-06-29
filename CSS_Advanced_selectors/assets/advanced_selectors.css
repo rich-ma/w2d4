@@ -4,6 +4,7 @@ body {
   /* If the user cannot load the Arial font, the sans-serif font is used */
   font-family: Arial, sans-serif;
   background-color: #FEFFF1;
+  padding: 2%;
 }
 
 h1 {
@@ -14,11 +15,39 @@ h2 {
   font-size: 32px;
 }
 
+input[type="radio"]{
+  -webkit-appearance: none;
+  width: 27px;
+  height: 27px;
+  cursor: pointer;
+  background-image: url(../assets/stars.png);
+  vertical-align: bottom;
+  outline: none;
+}
+
+input[type="radio"]:hover{
+  background-color: blue;
+
+}
+
+input[type="radio"]:checked{
+  background-color: yellow;
+}
+
+
+input[type="submit"]:hover {
+        background-color: gold;
+}
+
 /* This selector selects ALL anchor tag children of ALL list elements that
 are children of an Unordered List element */
 ul li a {
   text-decoration: none;
   color: inherit;
+}
+
+ol li {
+  background-color: grey;
 }
 
 /* This selector selects all image elements that are children (1 level deep)
@@ -34,13 +63,15 @@ header > img {
   list-style: square inside;
 }
 
-ol {
-  list-style: upper-roman inside;
+
+
+.user_review + input[type="submit"] {
+  border-top: 1px;
+  color: black;
+
 }
 
 .user_review h4 {
   font-size: 18px;
   font-weight: bold;
 }
-
-
